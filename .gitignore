@@ -1,0 +1,11 @@
+package-lock.json
+node_modules/
+.vscode/
+storage/*
+smart_contract/build/*
+smart_contract/node_modules/*
+env/env-*
+tmp/*
+generated/*
+.env
+

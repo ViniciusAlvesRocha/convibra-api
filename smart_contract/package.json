@@ -1,0 +1,53 @@
+{
+  "name": "@govtechsg/document-store-contract",
+  "version": "2.3.0",
+  "main": "index.js",
+  "repository": "git@github.com:Open-Attestation/document-store-contract.git",
+  "author": "GovTech",
+  "license": "Apache-2.0",
+  "scripts": {
+    "commit": "git-cz",
+    "commit:retry": "npm run commit -- --retry",
+    "eslint:fix": "eslint . --ext .js --fix",
+    "eslint": "eslint . --ext .js",
+    "lint:fix": "npm run solium:fix && npm run eslint:fix",
+    "lint": "npm run solium && npm run eslint",
+    "solium:fix": "solium -d contracts --fix",
+    "solium": "solium -d contracts",
+    "test": "truffle test",
+    "truffle": "truffle"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethlint": "^1.2.4",
+    "ganache-cli": "^6.6.0",
+    "lodash": "^4.17.15",
+    "truffle": "5.0.32",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "1.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/prompt": "8.2.0",
+    "@ls-age/commitlint-circle": "1.0.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "commitizen": "4.0.3",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-chai-expect": "^1.1.1",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "git-cz": "3.2.1",
+    "prettier": "^1.18.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.30"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/@commitlint/prompt"
+    }
+  }
+}
